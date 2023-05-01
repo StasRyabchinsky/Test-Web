@@ -50,13 +50,15 @@ h1 {
     font-weight: 500;
     font-size: 56px;
     line-height: 67px;
+    color: #343A40;
 }  
 h2{
     font-family: 'Rubik', sans-serif;   
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 46px;
     line-height: 55px;
+    color: #343A40;
 }
 h3{
     font-family: 'Rubik', sans-serif;   
@@ -64,6 +66,8 @@ h3{
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
+    color: #343A40;
+    margin-bottom: 8px;
 }
 h4{
     font-family: 'Rubik', sans-serif;  
@@ -71,6 +75,7 @@ h4{
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    color: #343A40;
 }
 h5{
     font-family: 'Inter', sans-serif;  
@@ -148,26 +153,26 @@ input, textarea {
 
 }
 .header {
+    /* position:sticky; */
+    top:0;
+    z-index: 2;
 }
 .header__container {
-    
+    max-width: 1140px;
+    height: 66px;
+    margin: 0 auto;
 }
 .header__menu {
-
-}
-.header__menu__container {
     max-width: 1140px;
     margin: 14px auto;
+}
+.header__menu__container {
     display: flex;
     flex-direction: row;
     align-items: center;
- /* justify-content: space-between; */
 }
 .header__menu__name {
     flex-basis: 15%;
-}
-.header__menu__name__logo {
-
 }
 .header__menu__burger {
     display: flex;
@@ -190,25 +195,6 @@ input, textarea {
 .header__link {
     margin-right: 20px;
 }
-.header__hello {
-}
-.header__hello__container{
-    max-width: 1140px;
-    margin: 134px auto 180px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.header__hello__text {
-    max-width: 570px;
-    height: 390px;
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .container {
     max-width: 1140px;
     margin: 80px auto ;
@@ -217,14 +203,29 @@ input, textarea {
     text-align: center;
     margin-bottom: 48px;
 }
-.aboutUs__container {
+.home{
+    background: #FBFBFD;
+}
+.home__hello {
+}
+.home__hello__container{
     max-width: 1140px;
-    margin: 80px auto;
+    margin: 134px auto 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-.aboutUs__title{
-    text-align: center;
-    margin-bottom: 48px;
+.home__hello__text {
+    max-width: 570px;
+    height: 390px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+
 .aboutUs__info__container {
     display: flex;
     flex-direction: row;
