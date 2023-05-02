@@ -44,6 +44,35 @@
   input::-ms-clear {
     display: none;
   } 
+
+span{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    color: #343A40;
+}
+p, a, button{
+    color: #9B9BAE;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+a {
+    text-decoration: none;
+}
+button{
+    background-color: inherit;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;  
+}
+input, textarea {
+    padding: 10px 15px;
+}
 h1 {
     font-family: 'Rubik', sans-serif;   
     font-style: normal;
@@ -84,33 +113,6 @@ h5{
     font-size: 15px;
     line-height: 26px;
     color: #343A40;
-}
-span{
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 14px;
-    color: #343A40;
-}
-p, a, button{
-    color: #9B9BAE;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
-}
-a {
-    text-decoration: none;
-}
-button{
-    background-color: inherit;
-    color: white;
-    margin: 0 5px;
-}
-input, textarea {
-    padding: 10px 15px;
 }
 .buttonArrow{
     width: 23px;
@@ -557,7 +559,7 @@ input, textarea {
     height: 180px;
     margin: 16px 0;
 }
-.footer__card p{
+.footer__card__list p{
     line-height: 200%;
 
 }
