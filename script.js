@@ -44,21 +44,6 @@ function stickyHeader(){
     }
     showSlide();
 
-    function nextSlide(){
-        sliderCount++;
-        if(sliderCount >= sliderBlock.length) sliderCount = 0; 
-        rollSlider();
-        thisSlide(sliderCount);
-    }
-
-
-    function prevSlide(){
-        sliderCount--;
-        if(sliderCount < 0) sliderCount = sliderBlock.length - 1;
-        rollSlider();
-        thisSlide(sliderCount);
-    }
-
     function rollSlider(){
         sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`
     }
