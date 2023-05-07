@@ -155,19 +155,37 @@ h5{
 
 }
 .header {
-    /* position:sticky; */
-    top:0;
+    height: 66px;
+    /* text-align: end; */
+
+}
+.sticky {
+    padding-top: 10px;
+    position:sticky;
+    top: 0;
     z-index: 2;
+}
+.backgroundHeader{
+    background-color: #01499d;
+    /* opacity: 0; */
+    /* transition: all 0.8s ease 0;
+    color: #FFFFFF; */
+}
+
+.header__nav__scroll p a{
+    color: #FFFFFF;
 }
 .header__container {
     max-width: 1140px;
-    height: 66px;
-    margin: 0 auto;
+    margin: auto;
+    height: 100%;
 }
 .header__menu {
     max-width: 1140px;
     margin: 14px auto;
 }
+
+
 .header__menu__container {
     display: flex;
     flex-direction: row;
@@ -175,6 +193,22 @@ h5{
 }
 .header__menu__name {
     flex-basis: 15%;
+}
+.header__menu__name:first-child{
+    
+    display: inherit;
+}
+.header__menu__name:last-child{
+    flex-basis: 15%;
+    display: none;
+}
+.header__logo{
+    display: none;
+}
+.header__scroll__logo{
+    width: 107px;
+    height: 26px;
+    display: inherit;
 }
 .header__menu__burger {
     display: flex;

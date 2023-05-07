@@ -18,17 +18,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./nody.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="bodyWrapper">
-      <div class="header">
+      <div class="header" id="Header">
         <div class="header__container">
           <div class="header__menu">
             <div class="header__menu__container">
               <div class="header__menu__name">
-                <div>
+                <div id="headerLogo" class="header__logo">
                   <img src="./assets/logo/logo.svg" alt="logo" />
+                </div>
+                <div id="headerScrollLogo" class="header__scroll__logo">
+                  <img src="./assets/logo/nodyFooter.svg" alt="logo" />
                 </div>
               </div>
               <div class="header__menu__burger">
@@ -56,8 +60,8 @@
               </div>
               <div class="header__menu__socialLink">
                 <div class="header__link">
-                  <a href="#"
-                    ><img src="./assets/logo/f.svg" alt="Facebook"
+                  <a href="#">
+                    <img src="./assets/logo/f.svg" alt="Facebook"
                   /></a>
                 </div>
                 <div class="header__link">
@@ -708,5 +712,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
