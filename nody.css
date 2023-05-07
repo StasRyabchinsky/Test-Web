@@ -362,16 +362,31 @@ h5{
     padding: 1px;
 }
 
-.customer__cardContainer {
+.customer__card__slider{
+    overflow: hidden;
+}
+.customer__card__line{
     margin: 48px 15px 0;
     padding: 8px 8px 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow: hidden;
+    transition: all 1s;
+
+    scroll-margin-left: 0;
+    scroll-snap-align: center;
+}
+.customer__cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .customer__card {
-    height: 315px;
     width: 341px;
+    height: 315px;
+    flex-shrink:0;
+    margin: 0 13px;
 }
 .customer__card__review {
     height: 172px;
@@ -390,6 +405,34 @@ h5{
     height: 119px;
     width: 100%;
     text-align: center;
+}
+.customer__scroll{
+    margin: 21px auto 0;
+}
+.customer__scroll__dots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.customer__scroll__dot{
+    margin: 0 8px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid #3956DE;
+}
+
+.customer__scroll__dot:hover{
+    transition: 1s;
+    transform: scale(1.5);
+    background: rgba(57, 86, 222, 0.4);
+
+}
+.dot__active{
+    transform: scale(1.5);
+    background: rgba(57, 86, 222, 0.4);
+
 }
 .news {
     padding: 1px;
