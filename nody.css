@@ -194,22 +194,12 @@ h5{
 .header__menu__name {
     flex-basis: 15%;
 }
-.header__menu__name:first-child{
-    
-    display: inherit;
-}
-.header__menu__name:last-child{
-    flex-basis: 15%;
-    display: none;
-}
-.header__logo{
-    display: none;
-}
-.header__scroll__logo{
+
+.header__logo img{
     width: 107px;
     height: 26px;
-    display: inherit;
 }
+
 .header__menu__burger {
     display: flex;
     flex-direction: row;
